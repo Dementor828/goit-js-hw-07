@@ -7,6 +7,8 @@ form.addEventListener('submit', (e) => {
 
   if (email === '' || password === '') {
     alert('All form fields must be filled in')
+    form.reset()
+    return;
   }
   const obj = { email, password}
   console.log(obj)
